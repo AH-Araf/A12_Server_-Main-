@@ -183,7 +183,6 @@ async function run(){
         });
 
 
-        
         //users
         app.post('/users', async (req, res) => {
             const user = req.body;
@@ -204,7 +203,6 @@ async function run(){
             const result = await usersCollection.updateOne(filter, updatedDoc, options);
             res.send(result);
         });
-
         
 
         app.get('/users', async (req, res) => {
