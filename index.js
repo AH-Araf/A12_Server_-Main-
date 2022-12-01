@@ -192,6 +192,7 @@ async function run(){
         });
 
 
+        
         app.put('/users/admin/:id', async (req, res) => {
             const id = req.params.id;
             const filter = { _id: ObjectId(id) }
@@ -205,7 +206,7 @@ async function run(){
             res.send(result);
         });
         
-        
+
 
         app.get('/users', async (req, res) => {
             const query = {};
