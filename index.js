@@ -190,6 +190,7 @@ async function run(){
             const result = await usersCollection.insertOne(user);
             res.send(result);
         });
+        
 
         app.put('/users/admin/:id', async (req, res) => {
             const id = req.params.id;
